@@ -34,8 +34,6 @@ jobs:
             - name: 发布到阿里云
               uses: easingthemes/ssh-deploy@v2.1.1
               env:
-                  # 私钥
-                  SSH_PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
                   # scp参数
                   ARGS: '-avzr --delete'
                   # 源目录
@@ -44,5 +42,6 @@ jobs:
                   REMOTE_HOST: '8.210.170.119'
                   # 用户
                   REMOTE_USER: 'root'
+                  REMOTE_PASSWORD: 'Xu1563844579'
                   # 目标地址
                   TARGET: '/root/vue-in-action'
