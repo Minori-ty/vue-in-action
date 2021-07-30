@@ -38,5 +38,6 @@ jobs:
                   REMOTE_USER: 'root'
                   REMOTE_PASSWARD: 'Xu1563844579'
                   REMOTE_PORT: '22'
+                  SOURCE: 'dist'
                   ARGS: '-avzr --delete'
                   TARGET: '/root/vue-in-action'
