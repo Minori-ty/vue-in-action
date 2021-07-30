@@ -34,9 +34,9 @@ jobs:
             - name: 发布到阿里云
               uses: easingthemes/ssh-deploy@v2.1.1
               with:
-                  host: '8.210.170.119'
-                  username: 'root'
-                  password: 'Xu1563844579'
-                  port: '22'
+                  REMOTE_HOST: '8.210.170.119'
+                  REMOTE_USER: 'root'
+                  REMOTE_PASSWARD: 'Xu1563844579'
+                  REMOTE_PORT: '22'
                   ARGS: '-avzr --delete'
                   TARGET: '/root/vue-in-action'
