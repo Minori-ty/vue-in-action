@@ -3,8 +3,28 @@
 </template>
 
 <script setup>
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/master/active-rfcs/0040-script-setup.md
+const a = () => {
+    new Promise((resolve, reject) => {
+        console.log('promise')
+        setTimeout(() => {
+            resolve(6)
+        }, 2000)
+    }).then(
+        (res) => {
+            console.log(res)
+        },
+        (error) => {
+            console.error(`出错了——${error}`)
+        }
+    )
+}
+a()
+class Person {
+    static name = 'class'
+    age = this
+}
+var p = new Person()
+console.log(Person.name)
 </script>
 
 <style>

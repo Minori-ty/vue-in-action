@@ -1,17 +1,28 @@
 {
-  "name": "vue-in-action",
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
-  "dependencies": {
-    "vue": "^3.0.5"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^1.3.0",
-    "@vue/compiler-sfc": "^3.0.5",
-    "vite": "^2.4.4"
-  }
+    "name": "vue-in-action",
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview",
+        "test": "jest --runInBand"
+    },
+    "dependencies": {
+        "vue": "^3.0.5"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.15.0",
+        "@babel/plugin-syntax-jsx": "^7.14.5",
+        "@babel/preset-env": "^7.15.0",
+        "@babel/preset-react": "^7.14.5",
+        "@vitejs/plugin-vue": "^1.3.0",
+        "@vue/babel-preset-jsx": "^1.2.4",
+        "@vue/compiler-sfc": "^3.0.5",
+        "@vue/test-utils": "^1.2.2",
+        "babel-jest": "^27.0.6",
+        "jest": "^27.0.6",
+        "jest-serializer-vue": "^2.0.2",
+        "vite": "^2.4.4",
+        "vue-jest": "^3.0.7"
+    }
 }
