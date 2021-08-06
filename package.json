@@ -7,13 +7,6 @@
         "serve": "vite preview",
         "test": "jest --runInBand"
     },
-    "gitHooks": {
-        "pre-push": "lint-staged"
-    },
-    "lint-staged": {
-        "*.{js,vue}": "eslint",
-        "src/**/*.{vue,css,less}": "stylelint"
-    },
     "dependencies": {
         "vue": "^3.0.5"
     },

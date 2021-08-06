@@ -46,3 +46,6 @@ jobs:
                   REMOTE_USER: 'root'
                   # 目标地址
                   TARGET: '/usr/local/nginx/vue-in-action'
+
+            - name: linux下载nodejs
+              run: yum -y install nodejs
