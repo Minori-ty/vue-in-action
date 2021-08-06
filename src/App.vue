@@ -1,8 +1,10 @@
 <template>
-    <h1>refresh</h1>
+    <h1>配置移除console</h1>
 </template>
 
 <script setup>
+// import config from '../vite.config'
+console.log('config')
 const a = () => {
     new Promise((resolve, reject) => {
         console.log('promise')
@@ -25,6 +27,7 @@ class Person {
 }
 var p = new Person()
 console.log(Person.name)
+console.log(import.meta.env.MODE)
 </script>
 
 <style>
