@@ -1,5 +1,5 @@
 <template>
-    <h1>这是nginx的测试</h1>
+    <h1>完成docker的部署</h1>
 </template>
 
 <script setup>
