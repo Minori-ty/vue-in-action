@@ -55,5 +55,4 @@ jobs:
                   pass: 'Xu1563844579'
                   first_ssh: |
                       cd /root/Docker/dist
-                      docker rm -f web-server
                       docker run --name web-server -d -p 80:80 -v $(pwd):/usr/share/nginx/html nginx
