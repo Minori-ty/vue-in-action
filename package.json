@@ -8,7 +8,6 @@
         "test": "jest --runInBand"
     },
     "gitHooks": {
-        "pre-commit": "echo --------------------------------------------docker---------------------",
         "pre-push": "lint-staged"
     },
     "lint-staged": {
