@@ -11,5 +11,5 @@ module.exports = {
         '@vue/babel-preset-jsx',
         '@babel/preset-react',
     ],
-    plugins: ['@babel/plugin-syntax-jsx'],
+    plugins: ['@babel/plugin-syntax-jsx', 'transform-remove-console'],
 }
