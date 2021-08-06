@@ -47,7 +47,7 @@ jobs:
                   # 目标地址
                   TARGET: '/root/Docker'
 
-            - name: linux下载nodejs
+            - name: 连接阿里云执行ssh指令
               uses: cross-the-world/ssh-scp-ssh-pipelines@latest
               with:
                   host: '8.210.170.119'
@@ -56,4 +56,4 @@ jobs:
                   first_ssh: |
                       cd /root/Docker/dist
                       docker rm -f web-serve
-                      docker run --name web-server -d -p 8080:80 -v $(pwd):/usr/share/nginx/html nginx
+                      docker run --name web-server -d -p 80:80 -v $(pwd):/usr/share/nginx/html nginx

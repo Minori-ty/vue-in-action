@@ -1,5 +1,5 @@
 <template>
-    <h1>完成docker的部署</h1>
+    <h1>refresh</h1>
 </template>
 
 <script setup>
